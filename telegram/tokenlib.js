@@ -3,7 +3,7 @@ const config = require("./config.json");
 const Web3 = require("web3");
 const web3 = new Web3(config.WEB3_PROVIDER_URL);
 const BigNumber = require("bignumber.js");
-const tokenAbi = require("../bot/abis/GenericToken.json");
+const tokenAbi = require("./abis/GenericToken.json");
 const tokenContract = new web3.eth.Contract(
   tokenAbi,
   config.ADDRESS_TOKEN
